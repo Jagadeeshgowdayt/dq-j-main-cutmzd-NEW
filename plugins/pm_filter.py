@@ -1020,7 +1020,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                     [
                                         InlineKeyboardButton(
                                             "⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔱",
-                                            url="https://t.me/vikranthronaaa",
+                                            url="https://t.me/vip_sender",
                                         )
                                     ],
                                 ]
@@ -1134,7 +1134,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton(
-                            "⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔱", url="https://t.me/vikranthronaaa"
+                            "⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔱", url="https://t.me/vip_sender"
                         )
                     ],
                 ]
@@ -1206,7 +1206,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await query.message.edit_text(
                     f"<b>Pʀᴏᴄᴇss Cᴏᴍᴘʟᴇᴛᴇᴅ ғᴏʀ ғɪʟᴇ ᴅᴇʟᴇᴛɪᴏɴ !\n\nSᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ {str(deleted)} ғɪʟᴇs ғʀᴏᴍ DB ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {keyword}.</b>"
                 )
-    elif query.data.startswith("killfilesvikranthronaaa"):
+    elif query.data.startswith("killfilesvip_sender"):
         ident, pattern = query.data.split("#")
         await query.message.edit_text(
             f"<b>Fᴇᴛᴄʜɪɴɢ Fɪʟᴇs ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ `sᴇʀɪᴇs ғɪʟᴇs` ᴏɴ DB... Pʟᴇᴀsᴇ ᴡᴀɪᴛ...</b>"
@@ -1677,7 +1677,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                      InlineKeyboardButton('⌬ Movie Search Gʀᴏᴜᴘ 🔎 ', url=GRP_LNK)
                 ],[
-                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
+                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vip_sender'),
                      InlineKeyboardButton('⚜️ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")
                 ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
