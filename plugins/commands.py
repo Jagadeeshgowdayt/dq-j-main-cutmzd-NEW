@@ -20,6 +20,26 @@ logger = logging.getLogger(__name__)
 BATCH_FILES = {}
 skip_series = True
 
+@Client.on_message(filters.command("movie_list") & filters.incoming)
+async def movie_list(client, message):
+    if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
+        buttons = [[
+                    InlineKeyboardButton('Search Any Movie Here ▶', switch_inline_query_current_chat='')
+                ],[
+                    InlineKeyboardButton('➢ Hindi Movies ', callback_data='help')
+                ],[
+                     InlineKeyboardButton('➣ Kannada Movies', callback_data="kannada")
+                ],[
+                    InlineKeyboardButton('⤬ Aᴅᴅ Tᴏ Yᴏᴜʀ Own Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
 @Client.on_message(filters.command("new_movies") & filters.incoming)
 async def new_movies(client, message):
         buttons = [[
