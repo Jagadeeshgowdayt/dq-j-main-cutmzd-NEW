@@ -20,6 +20,40 @@ logger = logging.getLogger(__name__)
 BATCH_FILES = {}
 skip_series = True
 
+@Client.on_message(filters.command("new_movies") & filters.incoming)
+async def new_movies(client, message):
+        buttons = [[
+                    InlineKeyboardButton('1', switch_inline_query_current_chat='Good Night'),
+                    InlineKeyboardButton('2', switch_inline_query_current_chat='Vikipedia'),
+                    InlineKeyboardButton('3', switch_inline_query_current_chat='Oru Nalla Naal Paathu')
+        ],[
+                    InlineKeyboardButton('4', switch_inline_query_current_chat='Shaakuntalam'),
+                    InlineKeyboardButton('5', switch_inline_query_current_chat='Wolfhound'),
+                    InlineKeyboardButton('6', switch_inline_query_current_chat='Anuragam')
+        ],[
+                    InlineKeyboardButton('7', switch_inline_query_current_chat='Sankarabharanam'),
+                    InlineKeyboardButton('8', switch_inline_query_current_chat='WOW'),
+                    InlineKeyboardButton('9', switch_inline_query_current_chat='Savitri')
+        ],[
+                    InlineKeyboardButton('10', switch_inline_query_current_chat='Uncharted'),
+                    InlineKeyboardButton('11', switch_inline_query_current_chat='Thandatti'),
+                    InlineKeyboardButton('12', switch_inline_query_current_chat='')
+        ],[
+                    InlineKeyboardButton('13', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('14', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('15', switch_inline_query_current_chat='')
+        ],[
+                    InlineKeyboardButton(text="❌️𝖢𝗅𝗈𝗌𝖾❌️", callback_data="close_data")
+                  ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.RECENT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
