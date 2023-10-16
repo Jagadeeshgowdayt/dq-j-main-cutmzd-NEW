@@ -28,7 +28,7 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton('〄 Hindi', callback_data='help')
                 ],[
-                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
+                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vip_sender'),
                      InlineKeyboardButton('kannada', callback_data="kannada")
                 ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -55,7 +55,7 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
                 ],[
-                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
+                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vip_sender'),
                      InlineKeyboardButton('kannada', callback_data="kannada")
                 ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -102,7 +102,7 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
                 ],[
-                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vikranthronaaa'),
+                     InlineKeyboardButton('Request movie ', url=f'https://t.me/vip_sender'),
                      InlineKeyboardButton('kannada', callback_data="kannada")
                 ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -159,7 +159,7 @@ async def start(client, message):
               #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
               InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vikranthronaaa")
+              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vip_sender")
              ]
                         ]
                     )
@@ -178,7 +178,7 @@ async def start(client, message):
               #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
               InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vikranthronaaa")
+              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vip_sender")
              ]
             ]
                     )
@@ -297,7 +297,7 @@ async def start(client, message):
               #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
               InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vikranthronaaa")
+              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vip_sender")
              ]
             ]
                 )
@@ -351,7 +351,7 @@ async def start(client, message):
               #InlineKeyboardButton('sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK),
               InlineKeyboardButton('🔰  ᴍᴀɪɴ ʜᴀɴɴᴇʟ  🔰', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vikranthronaaa")
+              InlineKeyboardButton("⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚜️", url="https://t.me/vip_sender")
              ]
             ]
         )
