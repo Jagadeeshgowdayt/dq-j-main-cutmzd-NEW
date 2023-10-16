@@ -2,25 +2,25 @@ class script(object):
     START_TXT = """  just send movie name .. i will send download link  """
 
     HELP_TXT = """<b>Hᴇʏ {}
-✨Enjoy it, but remember my name: "VIP Sender Bot" ✨.</b>"""
+✨Enjoy it, but remember my name: VIP Sender Bot ✨.</b>"""
 
     ABOUT_TXT = """<b>⚜️ BoT Nᴀᴍᴇ : {}
 ✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.7.1 [ Sᴛᴀʙʟᴇ ]
 running succsfully  </b>"""
 
-    SOURCE_TXT = """Enjoy it, but remember my name: "VIP Sender Bot""""
+    SOURCE_TXT = """Enjoy it, but remember my name: VIP Sender Bot"""
 
-    MANUELFILTER_TXT = """Enjoy it, but remember my name: "VIP Sender Bot""""
+    MANUELFILTER_TXT = """Enjoy it, but remember my name: VIP Sender Bot"""
 
-    BUTTON_TXT = """Enjoy it, but remember my name: "VIP Sender Bot""""
+    BUTTON_TXT = """Enjoy it, but remember my name: VIP Sender Bot"""
 
-    AUTOFILTER_TXT = """Enjoy it, but remember my name: "VIP Sender Bot""""
+    AUTOFILTER_TXT = """Enjoy it, but remember my name: VIP Sender Bot"""
 
-    CONNECTION_TXT = """Enjoy it, but remember my name: "VIP Sender Bot""""
+    CONNECTION_TXT = """Enjoy it, but remember my name: VIP Sender Bot"""
 
-    EXTRAMOD_TXT = """Enjoy it, but remember my name: "VIP Sender Bot""""
+    EXTRAMOD_TXT = """Enjoy it, but remember my name: VIP Sender Bot"""
 
-    ADMIN_TXT = """Enjoy it, but remember my name: "VIP Sender Bot""""
+    ADMIN_TXT = """Enjoy it, but remember my name: VIP Sender Bot"""
 
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs:<b> 203 <code>{}</code>
@@ -73,7 +73,7 @@ Nᴀᴍᴇ - {}"""
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 🤪, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
 
     OWNER_INFO = """
-Enjoy it, but remember my name: "VIP Sender Bot">"""
+Enjoy it, but remember my name: VIP Sender Bot>"""
 
 
     PAID_INFO = """
@@ -153,13 +153,13 @@ IMDb Data:
 ★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <b>[vip_sender ⎚](https://t.me/vip_sender)</b></b>"""
     
     ALL_FILTERS = """
-<b>Enjoy it, but remember my name: "VIP Sender Bot"</b>"""
+<b>Enjoy it, but remember my name: VIP Sender Bot</b>"""
     
     GFILTER_TXT = """
-<b>Enjoy it, but remember my name: "VIP Sender Bot"</b> """
+<b>Enjoy it, but remember my name: VIP Sender Bot</b> """
     
     FILE_STORE_TXT = """
-<b>Enjoy it, but remember my name: "VIP Sender Bot"</b>
+<b>Enjoy it, but remember my name: VIP Sender Bot</b>
 
 """
 
