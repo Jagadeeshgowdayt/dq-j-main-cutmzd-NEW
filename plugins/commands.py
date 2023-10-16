@@ -54,6 +54,27 @@ async def new_movies(client, message):
             parse_mode=enums.ParseMode.HTML
         )
 
+@Client.on_message(filters.command("movies") & filters.incoming)
+async def movies(client, message):
+        buttons = [[
+                    InlineKeyboardButton('Search Any Movie Here ▶', switch_inline_query_current_chat='')
+                ],[
+                    InlineKeyboardButton('➢ Hindi Movies ', callback_data='help')
+                ],[
+                     InlineKeyboardButton('➣ Kannada Movies', callback_data="kannada")
+                ],[
+                    InlineKeyboardButton('⤬ Aᴅᴅ Tᴏ Yᴏᴜʀ Own Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.RECENT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
