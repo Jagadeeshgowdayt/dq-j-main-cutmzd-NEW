@@ -23,10 +23,7 @@ running succsfully  </b>"""
     ADMIN_TXT = """Enjoy it, but remember my name: VIP Sender Bot"""
 
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
-★ Tᴏᴛᴀʟ Usᴇʀs:<b> 203 <code>{}</code>
-★ Tᴏᴛᴀʟ Usᴇʀs:<b> 203 users <code></code>
-★ Tᴏᴛᴀʟ Usᴇʀs:<b> 786<code></code>
-★ Tᴏᴛᴀʟ Usᴇʀs:<b>  <code>{786}</code>
+★ Tᴏᴛᴀʟ Usᴇʀs:<b>  <code>{}</code>
 ★ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code>
 ★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
 ★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code></b>"""
