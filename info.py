@@ -44,8 +44,7 @@ NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), True)
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jagadeesh:jagadeesh@jagadeesh.djp3gdz.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "jagadeesh")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jagadeesh
-')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jagadeesh')
 
 # Others
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
