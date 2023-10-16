@@ -20,19 +20,19 @@ logger = logging.getLogger(__name__)
 BATCH_FILES = {}
 skip_series = True
 
+#start my edit
+
 @Client.on_message(filters.command("movie_list") & filters.incoming)
 async def movie_list(client, message):
-    if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
                     InlineKeyboardButton('Search Any Movie Here ▶', switch_inline_query_current_chat='')
                 ],[
                     InlineKeyboardButton('➢ Hindi Movies ', callback_data='help')
                 ],[
                      InlineKeyboardButton('➣ Kannada Movies', callback_data="kannada")
-                ],[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Tᴏ Yᴏᴜʀ Own Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_sticker("CAACAgUAAxkBAAEJwnNkuoLiLSQ9EOU454AQHr0vNGswOgACegADCRqTHbffeMJ-KALcLwQ")
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -40,33 +40,14 @@ async def movie_list(client, message):
             parse_mode=enums.ParseMode.HTML
         )
 
-@Client.on_message(filters.command("new_movies") & filters.incoming)
-async def new_movies(client, message):
+
+@Client.on_message(filters.command("kannada_movies") & filters.incoming)
+async def kannada_movies(client, message):
         buttons = [[
-                    InlineKeyboardButton('1', switch_inline_query_current_chat='Good Night'),
-                    InlineKeyboardButton('2', switch_inline_query_current_chat='Vikipedia'),
-                    InlineKeyboardButton('3', switch_inline_query_current_chat='Oru Nalla Naal Paathu')
-        ],[
-                    InlineKeyboardButton('4', switch_inline_query_current_chat='Shaakuntalam'),
-                    InlineKeyboardButton('5', switch_inline_query_current_chat='Wolfhound'),
-                    InlineKeyboardButton('6', switch_inline_query_current_chat='Anuragam')
-        ],[
-                    InlineKeyboardButton('7', switch_inline_query_current_chat='Sankarabharanam'),
-                    InlineKeyboardButton('8', switch_inline_query_current_chat='WOW'),
-                    InlineKeyboardButton('9', switch_inline_query_current_chat='Savitri')
-        ],[
-                    InlineKeyboardButton('10', switch_inline_query_current_chat='Uncharted'),
-                    InlineKeyboardButton('11', switch_inline_query_current_chat='Thandatti'),
-                    InlineKeyboardButton('12', switch_inline_query_current_chat='')
-        ],[
-                    InlineKeyboardButton('13', switch_inline_query_current_chat=''),
-                    InlineKeyboardButton('14', switch_inline_query_current_chat=''),
-                    InlineKeyboardButton('15', switch_inline_query_current_chat='')
-        ],[
-                    InlineKeyboardButton(text="❌️𝖢𝗅𝗈𝗌𝖾❌️", callback_data="close_data")
-                  ]]
+                     InlineKeyboardButton('➣ Kannada Movies', callback_data="kannada")
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
+        m=await message.reply_sticker("CAACAgUAAxkBAAEJwnNkuoLiLSQ9EOU454AQHr0vNGswOgACegADCRqTHbffeMJ-KALcLwQ")
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -74,25 +55,21 @@ async def new_movies(client, message):
             parse_mode=enums.ParseMode.HTML
         )
 
-@Client.on_message(filters.command("movies") & filters.incoming)
-async def movies(client, message):
+@Client.on_message(filters.command("hindi_movies") & filters.incoming)
+async def hindi_movies(client, message):
         buttons = [[
-                    InlineKeyboardButton('Search Any Movie Here ▶', switch_inline_query_current_chat='')
-                ],[
                     InlineKeyboardButton('➢ Hindi Movies ', callback_data='help')
-                ],[
-                     InlineKeyboardButton('➣ Kannada Movies', callback_data="kannada")
-                ],[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Tᴏ Yᴏᴜʀ Own Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgUAAxkBAAFDeLdkr4COi51mvyZUAAG5l0EmIiwY2J4AAswKAALopYBVbzDUtgk8NrIeBA")
+        m=await message.reply_sticker("CAACAgUAAxkBAAEJwnNkuoLiLSQ9EOU454AQHr0vNGswOgACegADCRqTHbffeMJ-KALcLwQ")
         await message.reply_photo(
             photo=random.choice(PICS),
-            caption=script.RECENT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
+#end my edit
 
 
 @Client.on_message(filters.command("start") & filters.incoming)
