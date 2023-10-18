@@ -1673,7 +1673,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons =[[
-                    InlineKeyboardButton('Search Any Movie Here ▶', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('Search Any Movie Here ▶', url=f'https://telegram.me/vip_sender')
                 ],[
                     InlineKeyboardButton('➢ Hindi Movies ', callback_data='help')
                 ],[
