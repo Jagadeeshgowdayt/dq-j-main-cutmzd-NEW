@@ -407,7 +407,7 @@ async def next_page(bot, query):
         ],
     )
     btn.insert(
-        0, [InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")]
+        0, [InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://telegram.me/{temp.U_NAME}")]
     )
     try:
         await query.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(btn))
@@ -548,7 +548,7 @@ async def language_check(bot, query):
             0,
             [
                 InlineKeyboardButton(
-                    "⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}"
+                    "⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://telegram.me/{temp.U_NAME}"
                 )
             ],
         )
@@ -945,7 +945,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 if clicked == typed:
                     await query.answer(
-                        url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}"
+                        url=f"https://telegram.me/{temp.U_NAME}?start={ident}_{file_id}"
                     )
                     return
                 else:
@@ -956,7 +956,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             elif settings["botpm"]:
                 if clicked == typed:
                     await query.answer(
-                        url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}"
+                        url=f"https://telegram.me/{temp.U_NAME}?start={ident}_{file_id}"
                     )
                     return
                 else:
@@ -1020,7 +1020,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                     [
                                         InlineKeyboardButton(
                                             "⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔱",
-                                            url="https://t.me/vip_sender",
+                                            url="https://telegram.me/vip_sender",
                                         )
                                     ],
                                 ]
@@ -1038,11 +1038,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer("Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !", show_alert=True)
         except PeerIdInvalid:
             await query.answer(
-                url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}"
+                url=f"https://telegram.me/{temp.U_NAME}?start={ident}_{file_id}"
             )
         except Exception as e:
             await query.answer(
-                url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}"
+                url=f"https://telegram.me/{temp.U_NAME}?start={ident}_{file_id}"
             )
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -1134,7 +1134,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton(
-                            "⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔱", url="https://t.me/vip_sender"
+                            "⚜️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔱", url="https://telegram.me/vip_sender"
                         )
                     ],
                 ]
@@ -1381,7 +1381,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return
         title = query.message.chat.title
         settings = await get_settings(grp_id)
-        btn2 = [[InlineKeyboardButton("Cʜᴇᴄᴋ PM", url=f"t.me/{temp.U_NAME}")]]
+        btn2 = [[InlineKeyboardButton("Cʜᴇᴄᴋ PM", url=f"telegram.me/{temp.U_NAME}")]]
         reply_markup = InlineKeyboardMarkup(btn2)
         await query.message.edit_text(
             f"<b>Yᴏᴜʀ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ ғᴏʀ {title} ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ʏᴏᴜʀ PM</b>"
@@ -1679,7 +1679,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                      InlineKeyboardButton('➣ Kannada Movies', callback_data="kannada")
                 ],[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Tᴏ Yᴏᴜʀ Own Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('⤬ Aᴅᴅ Tᴏ Yᴏᴜʀ Own Gʀᴏᴜᴘ ⤬', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -5078,7 +5078,7 @@ async def auto_filter(client, msg, spoll=False):
     )
 
     btn.insert(
-        0, [InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")]
+        0, [InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://telegram.me/{temp.U_NAME}")]
     )
 
     if offset != "":
