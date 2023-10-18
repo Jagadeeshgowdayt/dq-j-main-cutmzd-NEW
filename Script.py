@@ -136,16 +136,12 @@ SLIVER 🥈      : 100 RS ( LIFETIME VALIDITY)
  ᴊᴏɪɴ ɴᴏᴡ:<b> [vip_sender ⎚](https://telegram.me/vip_sender)</b>"""
 
     IMDB_TEMPLATE_TXT = """
-<b>Query: {query}
-IMDb Data:
-
+{query}
 🔖 ᴛɪᴛʟᴇ : <a href={url}>{title}</a>
-🎭 ɢᴇɴʀᴇ : {genres}
+🎭: {genres}
 📆 ʀᴇʟᴇᴀsᴇ : <a href={url}/releaseinfo>{year}</a>
 🌟 ʀᴀᴛɪɴɢ : <a href={url}/ratings>{rating}</a> / 10
 🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages}
-
-🔖 sʜᴏʀᴛ : {plot}
 
 ★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <b>[vip_sender ⎚](https://telegram.me/vip_sender)</b></b>"""
     
