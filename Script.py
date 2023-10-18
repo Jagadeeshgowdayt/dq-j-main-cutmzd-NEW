@@ -89,7 +89,7 @@ DIAMOND 🔹: 200RS   ( LIFETIME VALIDITY)
 GOLD 🥇        : 150 RS   ( LIFETIME VALIDITY)
 SLIVER 🥈      : 100 RS ( LIFETIME VALIDITY) 
 
-ɪғ ᴀɴʏᴏɴᴇ ɪɴᴛᴇʀᴇsᴛᴇᴅ ᴄᴏɴᴛᴀᴄᴛ [https://t.me/jagadeeshGowda , https://t.me/vip_sender]"""
+ɪғ ᴀɴʏᴏɴᴇ ɪɴᴛᴇʀᴇsᴛᴇᴅ ᴄᴏɴᴛᴀᴄᴛ [https://telegram.me/jagadeeshGowda , https://telegram.me/vip_sender]"""
     REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
 
@@ -133,7 +133,7 @@ SLIVER 🥈      : 100 RS ( LIFETIME VALIDITY)
 
  SIZE: <code>{file_size}</code> 
   
- ᴊᴏɪɴ ɴᴏᴡ:<b> [vip_sender ⎚](https://t.me/vip_sender)</b>"""
+ ᴊᴏɪɴ ɴᴏᴡ:<b> [vip_sender ⎚](https://telegram.me/vip_sender)</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
@@ -147,7 +147,7 @@ IMDb Data:
 
 🔖 sʜᴏʀᴛ : {plot}
 
-★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <b>[vip_sender ⎚](https://t.me/vip_sender)</b></b>"""
+★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <b>[vip_sender ⎚](https://telegram.me/vip_sender)</b></b>"""
     
     ALL_FILTERS = """
 <b>Enjoy it, but remember my name: VIP Sender Bot</b>"""
