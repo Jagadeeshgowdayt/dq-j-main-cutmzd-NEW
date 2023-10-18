@@ -25,7 +25,7 @@ skip_series = True
 @Client.on_message(filters.command("movie_list") & filters.incoming)
 async def movie_list(client, message):
         buttons = [[
-                    InlineKeyboardButton('Search Any Movie Here ▶', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('Search Any Movie Here ▶', url=f'https://telegram.me/vip_sender')
                 ],[
                     InlineKeyboardButton('➢ Hindi Movies ', callback_data='help')
                 ],[
@@ -76,7 +76,7 @@ async def hindi_movies(client, message):
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('Search Any Movie Here ▶', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('Search Any Movie Here ▶', url=f'https://telegram.me/vip_sender')
                 ],[
                     InlineKeyboardButton('➢ Hindi Movies ', callback_data='help')
                 ],[
@@ -102,7 +102,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('Search Any Movie Here ▶', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('Search Any Movie Here ▶', url=f'https://telegram.me/vip_sender')
                 ],[
                     InlineKeyboardButton('➢ Hindi Movies ', callback_data='help')
                 ],[
@@ -148,7 +148,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('Search Any Movie Here ▶', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('Search Any Movie Here ▶', url=f'https://telegram.me/vip_sender')
                 ],[
                     InlineKeyboardButton('➢ Hindi Movies ', callback_data='help')
                 ],[
