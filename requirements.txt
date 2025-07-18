@@ -1,4 +1,4 @@
-\pyrofork
+pyrofork
 tgcrypto
 requests
 bs4
